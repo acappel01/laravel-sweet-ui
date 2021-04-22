@@ -1,0 +1,5 @@
+/vendor/
+.phpunit.result.cache
+build/report.junit.xml
+/node_modules
+.DS_Store

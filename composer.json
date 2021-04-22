@@ -1,0 +1,54 @@
+{
+    "name": "yabhq/laravel-sweet-ui",
+    "description": "A collection of UI blade components for use in Laravel",
+    "keywords": ["yab", "yabhq", "laravel", "ui"],
+    "homepage": "https://github.com/yabhq/laravel-sweet-ui",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jim",
+            "email": "jimhlad@gmail.com"
+        },
+        {
+            "name": "Chris",
+            "email": "chris@chrisblackwell.me"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.0",
+        "livewire/livewire": "^2.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yab\\SweetUi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yab\\SweetUi\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yab\\SweetUi\\SweetUiServiceProvider"
+            ]
+        }
+    }
+}
